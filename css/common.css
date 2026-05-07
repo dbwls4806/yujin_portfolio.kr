@@ -1,0 +1,107 @@
+html,body{
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    margin: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: #222222;
+}
+*{
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+title,th,td{
+    border-collapse: collapse;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+}
+#start{
+    background-image: url('/images/start-m.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    max-height: 900px;
+    position: relative;
+}
+#start label{
+    color:#093337;
+    font-size: 25px;
+    font-weight: 800;
+    position: absolute;
+    bottom: 60px;
+    opacity: 0.8;
+}
+#start i{
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.8;
+    animation-name:updown;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    color:#093337;
+}
+.section1{
+    background-color: #F7FAF1;
+    width: 100%;
+    height: 900px;
+    display: flex;
+}
+.section1 section{
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/section1-m.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@keyframes updown{
+    0% {bottom: 10px;}
+    50% {bottom: 35px;}
+    100% {bottom: 10px;}
+}
+@media screen and (min-width:450px){
+    
+}
+@media screen and (min-width:640px){
+
+}
+@media screen and (min-width:768px){
+    
+}
+@media screen and (min-width:1024px){
+   #start{
+        background-image: url('/images/start-p.png');
+        background-size: 100%;
+        max-width: 1440px;
+    }
+    .section1 section{
+        background-image: url(/images/section1-p.png);
+        max-width: 1440px;
+        max-height: 900px;
+    }
+}
+@media screen and (min-width:1280px){
+    
+}
